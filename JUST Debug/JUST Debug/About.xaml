@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="JUST_Debug.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JUST_Debug"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ListView IsItemClickEnabled="False">
+            <ListViewHeaderItem>
+                <TextBlock>JUST Debug</TextBlock>
+            </ListViewHeaderItem>
+            <ListViewItem>
+                <StackPanel>
+                    <TextBlock Text="Serial Port debug tool Designed by JUST Smart Car Lab." Margin="35,0,0,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewHeaderItem>
+                <TextBlock Text="Version"></TextBlock>
+            </ListViewHeaderItem>
+            <ListViewItem>
+                <TextBlock Text="V 0.0.1 ( Initional Version)."  Margin="35,0,0,0"></TextBlock>
+            </ListViewItem>
+            <ListViewHeaderItem>
+                <TextBlock Text="Feed Back"></TextBlock>
+            </ListViewHeaderItem>
+            <ListViewItem>
+                <HyperlinkButton Content="vmoor2016@outlook.com"  
+                                 Margin="35,0,0,0" 
+                                 Name="EmailAdderssHyperLinkButton"
+                                 Click="EmailAdderssHyperLinkButton_Click"></HyperlinkButton>
+            </ListViewItem>
+            <ListViewHeaderItem>
+                <TextBlock Text="Share Code"></TextBlock>
+            </ListViewHeaderItem>
+            <ListViewItem>
+                <HyperlinkButton   NavigateUri="https://github.com/VMoor2016/JUST-Debug"
+                                                 Margin="35,0,0,0" Name="SourceCodeLinkButton"
+                                                Click="SourceCodeLinkButton_Click"
+                                                Content="https://github.com/VMoor2016/JUST-Debug"></HyperlinkButton>
+            </ListViewItem>
+        </ListView>
+    </Grid>
+</Page>
